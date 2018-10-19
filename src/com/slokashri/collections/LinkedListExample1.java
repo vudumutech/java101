@@ -8,7 +8,7 @@ public class LinkedListExample1 {
         LinkedListExample1.addDelete();
     }
 
-    public static void addDelete(){
+    private static void addDelete(){
 
         LinkedList<String> linkedList1 = new LinkedList<>();
 
@@ -50,8 +50,9 @@ public class LinkedListExample1 {
         while (stringIterator.hasNext()){
             System.out.print(stringIterator.next() + " ");
         }
+        System.out.println("");
+        System.out.println("Descending Iterator------------");
 
-        System.out.println(" Descending Iterator------------");
         stringIterator = linkedList1.descendingIterator();
         while (stringIterator.hasNext()){
             System.out.print(stringIterator.next() + " ");
